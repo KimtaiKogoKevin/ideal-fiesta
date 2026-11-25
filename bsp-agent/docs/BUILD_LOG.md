@@ -186,7 +186,7 @@ Any problem sets `needs_human`, adds a "⚠ check facts" tag, and shows as a ste
 
 **Eval after the changes:** still 100% on all four metrics (16/16 intent, 16/16 urgency, 7/7 order, 11/11 part top-3), ~$0.014 and ~7 s per email.
 
-**Deploying with the disk:** `render.yaml` is a Render blueprint: a Starter web service with a 1 GB disk mounted at `/var/data`, and `BSP_DB_PATH=/var/data/app.db`. Set `ANTHROPIC_API_KEY` in the dashboard.
+**Deploying with the disk:** `render.yaml` (at the repo root, with `rootDir: bsp-agent`) is a Render blueprint: a Starter web service with a 1 GB disk mounted at `/var/data`, and `BSP_DB_PATH=/var/data/app.db`. Set `ANTHROPIC_API_KEY` in the dashboard.
 
 ---
 

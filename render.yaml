@@ -1,9 +1,11 @@
-# Render blueprint: one web service with a 1 GB persistent disk for the SQLite file.
+# Render blueprint (must sit at the repo root): one web service with a 1 GB persistent
+# disk for the SQLite file. The app itself lives in bsp-agent/.
 # The disk needs a paid instance type (Starter); the free tier wipes files on redeploy.
 services:
   - type: web
     name: bsp-enquiry-agent
     runtime: python
+    rootDir: bsp-agent
     plan: starter
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT --proxy-headers --forwarded-allow-ips='*'
