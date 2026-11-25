@@ -2,7 +2,7 @@
 
 An AI agent that reads customer emails for [Bathroom Spare Parts](https://www.bathroomspareparts.co.uk), works out which spare part the customer needs or where their order is, and drafts a reply for a member of staff to approve. It never sends anything on its own.
 
-**Live demo:** _[link — add after deploy]_
+**Live demo:** https://bsp-enquiry-agent.onrender.com
 
 Built for the Bathroom Spare Parts AI Automation & Development Specialist challenge. Products and prices are real public data from the website; all customers, orders and emails are fictional.
 
