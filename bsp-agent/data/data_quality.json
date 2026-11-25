@@ -1,0 +1,130 @@
+[
+  {
+    "type": "duplicate_listing_same_part",
+    "part_number": "MB1113",
+    "listings": [
+      {
+        "sku": "BSP-0007",
+        "name": "Adora Fusion Thermostatic cartridge for the Metro multifunction valve (For MB500RM) MB1113",
+        "price": 54.23,
+        "url": "https://www.bathroomspareparts.co.uk/adora-fusion-thermostatic-cartridge-for-the-metro-multifunction-valve-for-mb500rm-mb1113-76086-p.asp"
+      },
+      {
+        "sku": "BSP-0008",
+        "name": "Adora Thermostatic Cartridge (For MBEV500W) MB1113",
+        "price": 54.23,
+        "url": "https://www.bathroomspareparts.co.uk/adora-thermostatic-cartridge-for-mbev500w-mb1113-76087-p.asp"
+      }
+    ]
+  },
+  {
+    "type": "duplicate_listing_same_part",
+    "part_number": "CR101C",
+    "listings": [
+      {
+        "sku": "BSP-0011",
+        "name": "Alpi Thermostatic Cartridge Compact CR101C",
+        "price": 120.64,
+        "url": "https://www.bathroomspareparts.co.uk/alpi-thermostatic-cartridge-compact-cr101c-28960-p.asp"
+      },
+      {
+        "sku": "BSP-0012",
+        "name": "Alpi GO106 Bath Shower Mixer Thermostaic Valve CR-101C",
+        "price": 120.64,
+        "url": "https://www.bathroomspareparts.co.uk/alpi-go106-bath-shower-mixer-thermostaic--valve-cr-101c-97692-p.asp"
+      }
+    ]
+  },
+  {
+    "type": "duplicate_listing_same_part",
+    "part_number": "214004",
+    "listings": [
+      {
+        "sku": "BSP-0019",
+        "name": "Aqualisa Aquarian 99 Thermostatic Cartridge Body Assembly 214004",
+        "price": 245.81,
+        "url": "https://www.bathroomspareparts.co.uk/aqualisa-aquarian-99-thermostatic-cartridge-body-assembly-214004-8988-p.asp"
+      },
+      {
+        "sku": "BSP-0020",
+        "name": "Aqualisa Aquarian Colt Thermostatic Cartridge 214004",
+        "price": 245.81,
+        "url": "https://www.bathroomspareparts.co.uk/aqualisa-aquarian-colt-thermostatic-cartridge-214004-224490-p.asp"
+      }
+    ]
+  },
+  {
+    "type": "duplicate_listing_same_part",
+    "part_number": "D40P-19B2",
+    "listings": [
+      {
+        "sku": "BSP-0043",
+        "name": "Bristan 1901 Diverter Assembly D40P-19B2",
+        "price": 15.12,
+        "url": "https://www.bathroomspareparts.co.uk/bristan-1901-diverter-assembly-d40p-19b2-130023-p.asp"
+      },
+      {
+        "sku": "BSP-0044",
+        "name": "Bristan Prism 40mm Diverter 4 Functions D40P-19B2",
+        "price": 15.12,
+        "url": "https://www.bathroomspareparts.co.uk/bristan-prism-40mm-diverter-4-functions-d40p-19b2-129774-p.asp"
+      }
+    ]
+  },
+  {
+    "type": "duplicate_listing_same_part",
+    "part_number": "ART.PT.21",
+    "listings": [
+      {
+        "sku": "BSP-0054",
+        "name": "Cifial Diverter Cartridge ART.PT.21",
+        "price": 98.53,
+        "url": "https://www.bathroomspareparts.co.uk/cifial-diverter-cartridge-artpt21-155775-p.asp"
+      },
+      {
+        "sku": "BSP-0055",
+        "name": "Cifial Edwardian Diverter Cartridge ART.PT.21",
+        "price": 98.53,
+        "url": "https://www.bathroomspareparts.co.uk/cifial-edwardian-diverter-cartridge-artpt21-161953-p.asp"
+      }
+    ]
+  },
+  {
+    "type": "same_part_number_different_price",
+    "part_number": "ABSP-10-0018",
+    "listings": [
+      {
+        "sku": "BSP-0057",
+        "name": "Abacus On/Off Cartridge For Concealed Shower Valve ABSP-10-0018",
+        "price": 28.0,
+        "url": "https://www.bathroomspareparts.co.uk/abacus-onoff-cartridge-for-concealed-shower-valve-absp-10-0018-206431-p.asp"
+      },
+      {
+        "sku": "BSP-0058",
+        "name": "Abacus On/Off Cartridge For Concealed Shower Valve ABSP-10-0018 Short Version",
+        "price": 80.0,
+        "url": "https://www.bathroomspareparts.co.uk/abacus-onoff-cartridge-for-concealed-shower-valve-absp-10-0018-short-version-133412-p.asp"
+      }
+    ]
+  },
+  {
+    "type": "typo_in_title",
+    "sku": "BSP-0012",
+    "name": "Alpi GO106 Bath Shower Mixer Thermostaic Valve CR-101C",
+    "found": "thermostaic",
+    "suggest": "thermostatic",
+    "url": "https://www.bathroomspareparts.co.uk/alpi-go106-bath-shower-mixer-thermostaic--valve-cr-101c-97692-p.asp"
+  },
+  {
+    "type": "typo_in_title",
+    "sku": "BSP-0096",
+    "name": "Geberit Flush Pate Type 70 242.957.FW.1",
+    "found": "flush pate",
+    "suggest": "flush plate",
+    "url": "https://www.bathroomspareparts.co.uk/geberit-flush-pate-type-70-242957fw1-202284-p.asp"
+  },
+  {
+    "type": "note",
+    "detail": "Part number SP584 is listed under both Adora (MB1500RV) and Burlington (TF2S/TF3S) flow cartridges on the live site \u2013 worth confirming they are the same OEM part."
+  }
+]

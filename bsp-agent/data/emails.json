@@ -1,0 +1,258 @@
+[
+  {
+    "id": "EM001",
+    "from": "sarah.whitfield@example.com",
+    "subject": "Where is my order?",
+    "body": "Hi, I ordered a pink Aqualisa cartridge on Saturday, order BSP104201. Our shower is completely out so we really need it. When will it arrive? Thanks, Sarah",
+    "received_at": "2026-11-23 23:00",
+    "attachment": null,
+    "ground_truth": {
+      "intent": "order_status",
+      "expected_part_numbers": [],
+      "order_id": "BSP104201",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "EM002",
+    "from": "k.morgan@example.com",
+    "subject": "Shower runs cold - which cartridge?",
+    "body": "Hello, our Aqualisa Midas 200 shower has started running lukewarm no matter where the temperature handle is set. We are on a mains pressure combi boiler. I think the cartridge has gone. Which one do I need?",
+    "received_at": "2026-11-23 21:00",
+    "attachment": null,
+    "ground_truth": {
+      "intent": "part_identification",
+      "expected_part_numbers": [
+        "518113"
+      ],
+      "order_id": null,
+      "urgency": "normal"
+    }
+  },
+  {
+    "id": "EM003",
+    "from": "r.bello@example.com",
+    "subject": "Flush button replacement",
+    "body": "Hi there, the flush plate on our wall hung toilet has cracked. It's white, rectangular, says Geberit on the back and has two rectangular buttons side by side. Photo attached. What do I need to order?",
+    "received_at": "2026-11-23 19:00",
+    "attachment": {
+      "type": "image",
+      "description": "White rectangular Geberit dual flush plate, two rectangular buttons side by side, crack across left button"
+    },
+    "ground_truth": {
+      "intent": "part_identification",
+      "expected_part_numbers": [
+        "115.125.11.1",
+        "115.135.11.1",
+        "115.100.11.1"
+      ],
+      "order_id": null,
+      "urgency": "normal"
+    }
+  },
+  {
+    "id": "EM004",
+    "from": "gareth@hughes-plumbing.example.com",
+    "subject": "Trade pricing for bulk Bathstore cartridges",
+    "body": "Morning. I'm refitting 12 flats that all have Bathstore Blade shower valves. Can you do trade pricing on 24 of the on/off cartridges SPACW0005 and 12 flow cartridges? Need them by end of next week. Gareth, Hughes Plumbing Ltd",
+    "received_at": "2026-11-23 17:00",
+    "attachment": null,
+    "ground_truth": {
+      "intent": "trade_quote",
+      "expected_part_numbers": [
+        "SPACW0005"
+      ],
+      "order_id": null,
+      "urgency": "normal"
+    }
+  },
+  {
+    "id": "EM005",
+    "from": "priya.nair@example.com",
+    "subject": "Wrong part?",
+    "body": "I received my Burlington diverter cartridge SP711 (order BSP104203) but it turns the wrong way - my valve closes anti-clockwise. Can I swap it? I haven't fitted it.",
+    "received_at": "2026-11-23 15:00",
+    "attachment": null,
+    "ground_truth": {
+      "intent": "return_exchange",
+      "expected_part_numbers": [
+        "SP711"
+      ],
+      "order_id": "BSP104203",
+      "urgency": "normal"
+    }
+  },
+  {
+    "id": "EM006",
+    "from": "t.fenwick@example.com",
+    "subject": "Old Abacus valve cartridge",
+    "body": "We have an Abacus CVD concealed shower valve installed in about 2013. The thermostat isn't holding temperature. Which cartridge is the right one for a valve that old?",
+    "received_at": "2026-11-23 13:00",
+    "attachment": null,
+    "ground_truth": {
+      "intent": "part_identification",
+      "expected_part_numbers": [
+        "1099-0000-0004"
+      ],
+      "order_id": null,
+      "urgency": "normal"
+    }
+  },
+  {
+    "id": "EM007",
+    "from": "j.patel@example.com",
+    "subject": "Order BSP104206 still not shipped??",
+    "body": "I ordered a Cifial diverter cartridge 4 days ago and it still says not dispatched. This is ridiculous, I paid for next day delivery. I want an answer today or a refund.",
+    "received_at": "2026-11-23 11:00",
+    "attachment": null,
+    "ground_truth": {
+      "intent": "complaint",
+      "expected_part_numbers": [],
+      "order_id": "BSP104206",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "EM008",
+    "from": "h.osei@example.com",
+    "subject": "Burlington Stour valve - top or bottom cartridge?",
+    "body": "I have a Burlington Stour BF3S thermostatic shower valve. The flow handle just spins and water won't turn off fully. The handle turns clockwise to close. Which cartridge do I need?",
+    "received_at": "2026-11-23 09:00",
+    "attachment": null,
+    "ground_truth": {
+      "intent": "part_identification",
+      "expected_part_numbers": [
+        "SP582"
+      ],
+      "order_id": null,
+      "urgency": "normal"
+    }
+  },
+  {
+    "id": "EM009",
+    "from": "emma.clarke@example.com",
+    "subject": "Flush plate scratched on arrival",
+    "body": "Hi, the chrome Geberit Delta 21 plate from order BSP104207 arrived with a deep scratch across the front. Photo attached. Please can you send a replacement?",
+    "received_at": "2026-11-23 07:00",
+    "attachment": {
+      "type": "image",
+      "description": "Bright chrome Geberit Delta 21 flush plate with long scratch across face"
+    },
+    "ground_truth": {
+      "intent": "damaged_item",
+      "expected_part_numbers": [
+        "115.125.21.1"
+      ],
+      "order_id": "BSP104207",
+      "urgency": "normal"
+    }
+  },
+  {
+    "id": "EM010",
+    "from": "n.green@example.com",
+    "subject": "Do you deliver to Ireland?",
+    "body": "Hi, do you ship to the Republic of Ireland and how much would delivery be for a small cartridge?",
+    "received_at": "2026-11-23 05:00",
+    "attachment": null,
+    "ground_truth": {
+      "intent": "general_question",
+      "expected_part_numbers": [],
+      "order_id": null,
+      "urgency": "normal"
+    }
+  },
+  {
+    "id": "EM011",
+    "from": "c.daniels@example.com",
+    "subject": "Bristan diverter",
+    "body": "Our Bristan Prism shower has a 4 function diverter that's leaking. The diverter is round, about 40mm. Is this the right shop?",
+    "received_at": "2026-11-23 03:00",
+    "attachment": null,
+    "ground_truth": {
+      "intent": "part_identification",
+      "expected_part_numbers": [
+        "D40P-19B2"
+      ],
+      "order_id": null,
+      "urgency": "normal"
+    }
+  },
+  {
+    "id": "EM012",
+    "from": "linda.marsh@example.com",
+    "subject": "Invoice request",
+    "body": "Could you send a VAT invoice for my order BSP104205 please? My landlord needs it.",
+    "received_at": "2026-11-23 01:00",
+    "attachment": null,
+    "ground_truth": {
+      "intent": "invoice_request",
+      "expected_part_numbers": [],
+      "order_id": "BSP104205",
+      "urgency": "normal"
+    }
+  },
+  {
+    "id": "EM013",
+    "from": "s.yilmaz@example.com",
+    "subject": "Aqualisa Opto cartridge - which colour?",
+    "body": "Our Aqualisa Opto concealed shower needs a new cartridge. We have a cold water tank in the loft and a hot water cylinder, no pump. The website shows pink, green and orange ones - which do I need?",
+    "received_at": "2026-11-22 23:00",
+    "attachment": null,
+    "ground_truth": {
+      "intent": "part_identification",
+      "expected_part_numbers": [
+        "265509",
+        "022809"
+      ],
+      "order_id": null,
+      "urgency": "normal"
+    }
+  },
+  {
+    "id": "EM014",
+    "from": "mike@brennanbathrooms.example.com",
+    "subject": "Alpi parts - can you confirm dispatch",
+    "body": "Hi, just checking order BSP104208 for the Alpi cartridges will go out today, I've got a job booked Thursday. Cheers, Mike",
+    "received_at": "2026-11-22 21:00",
+    "attachment": null,
+    "ground_truth": {
+      "intent": "order_status",
+      "expected_part_numbers": [],
+      "order_id": "BSP104208",
+      "urgency": "high"
+    }
+  },
+  {
+    "id": "EM015",
+    "from": "a.kowalski@example.com",
+    "subject": "Thermostatic cartridge from a photo",
+    "body": "I've taken the cartridge out of our shower. Photo attached. No brand name on the shower anywhere. Can you tell what it is?",
+    "received_at": "2026-11-22 19:00",
+    "attachment": {
+      "type": "image",
+      "description": "Brass thermostatic cartridge, approx 120mm long, splined spindle, two O-rings, no visible markings"
+    },
+    "ground_truth": {
+      "intent": "part_identification",
+      "expected_part_numbers": [],
+      "order_id": null,
+      "urgency": "normal"
+    }
+  },
+  {
+    "id": "EM016",
+    "from": "dlowe@example.com",
+    "subject": "Wrong colour cartridge?",
+    "body": "Order BSP104210 - I ordered the orange Opto cartridge but now someone tells me I need the pink one because we have a combi boiler. Can I change it before it arrives?",
+    "received_at": "2026-11-22 17:00",
+    "attachment": null,
+    "ground_truth": {
+      "intent": "return_exchange",
+      "expected_part_numbers": [
+        "265502"
+      ],
+      "order_id": "BSP104210",
+      "urgency": "normal"
+    }
+  }
+]

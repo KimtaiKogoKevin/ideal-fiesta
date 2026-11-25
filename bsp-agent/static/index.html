@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BSP Enquiry Agent</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="logo" aria-hidden="true">BSP</span>
+    <div>
+      <h1>Enquiry Agent</h1>
+      <p class="sub">Reads customer emails, researches parts and orders, drafts replies for staff to approve</p>
+    </div>
+  </div>
+  <div class="top-actions">
+    <span class="model" id="model"></span>
+    <button class="btn primary" id="newBtn">New enquiry</button>
+  </div>
+</header>
+
+<main class="layout" id="layout">
+  <aside class="inbox" aria-label="Inbox">
+    <div class="inbox-head">Inbox <span class="count" id="count"></span></div>
+    <ul id="emailList" class="email-list"></ul>
+    <p class="fine">Sample emails and orders are fictional. Products and prices are from the public website.</p>
+  </aside>
+
+  <section class="detail" id="detail" aria-live="polite">
+    <div class="empty" id="empty">
+      <h2>Pick an email to watch the agent work</h2>
+      <p>You'll see each step it takes (catalogue searches, order lookups, clarifying questions) and then its draft reply. Nothing is sent without a person approving it.</p>
+      <p>Or try your own with <strong>New enquiry</strong>, including a photo of a part.</p>
+    </div>
+    <div id="view" hidden>
+      <button class="btn ghost back" id="backBtn">&larr; Inbox</button>
+      <article class="card email" id="emailCard"></article>
+      <div class="section-head">
+        <h3>Agent steps</h3>
+        <button class="btn ghost small" id="rerunBtn" hidden>Re-run live</button>
+      </div>
+      <ol class="trace" id="trace"></ol>
+      <div id="draft"></div>
+    </div>
+  </section>
+</main>
+
+<dialog id="newDialog">
+  <form id="newForm" method="dialog">
+    <h2>New enquiry</h2>
+    <p class="fine">Write as a customer would. A photo of a cartridge, flush plate or valve helps. Don't include real personal details.</p>
+    <label>Your email (optional)<input name="sender" type="email" placeholder="you@example.com"></label>
+    <label>Message<textarea name="body" rows="5" required placeholder="e.g. My Aqualisa Opto shower runs cold. We have a combi boiler. Which cartridge do I need?"></textarea></label>
+    <label class="file">Photo (optional; large phone photos are resized automatically)<input name="image" type="file" accept="image/*"></label>
+    <img id="preview" alt="" hidden>
+    <div class="dialog-actions">
+      <button class="btn ghost" value="cancel" formnovalidate>Cancel</button>
+      <button class="btn primary" id="sendBtn" value="send">Run agent</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
